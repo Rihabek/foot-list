@@ -1,0 +1,24 @@
+body{
+  background-color: lightgray;
+}
+header {
+  background-image: url(img/image.jpg);
+  background-size: cover;
+  height: 50rem;
+
+}
+
+.title{
+  font-size: 60px;
+  color: white;
+  padding: 20rem;
+  text-transform: capitalize;
+}
+
+.card  {
+  display: flex;
+}
+
+.container{
+  margin-top: 2rem;
+}
