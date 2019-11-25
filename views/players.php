@@ -7,7 +7,7 @@
 <div class="container">
   <div class="row">
     <?php foreach ($players as $key => $value) { ?>
-      <div class="col-md-4">
+      <div class="col-md-2">
         <div class="card-deck text-center">
             <div class="card">
               <img src="<?php echo $value['photo']; ?>" class="card-img-top" alt="teamLogo">

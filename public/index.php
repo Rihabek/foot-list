@@ -20,15 +20,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="title" class="navbar-nav ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="?path=footbal">FootBall</a>
+                        <a class="nav-link" href="?route=footbal">FootBall</a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link" href="?path=teamList" id="teamList" role="button" >
+                      <a class="nav-link" href="?route=teamList" id="teamList" role="button" >
                         Team
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="?path=players">Players</a>
+                      <a class="nav-link" href="?route=players">Players</a>
                     </li>
                 </ul>
             </div>

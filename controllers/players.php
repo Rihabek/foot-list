@@ -1,8 +1,8 @@
 <?php
-require('models/team.php');
+require('models/players.php');
 
 function showPlayers() {
-  $teams = listPLayers();
+  $players = listPLayers();
   require('views/players.php');
 }
  ?>
