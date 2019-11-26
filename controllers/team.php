@@ -6,6 +6,10 @@ function showTeams() {
   require('views/team.php');
 }
 
-
+function showTeam(int $id)
+{
+  $team = getTeam($id, $_GET['id']);
+  require('views/coachsHteam.php');
+}
 
 ?>

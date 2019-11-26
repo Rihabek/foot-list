@@ -1,17 +1,12 @@
 body{
-  background-color: lightgray;
-}
-header {
   background-image: url(img/image.jpg);
   background-size: cover;
-  height: 50rem;
-
 }
+
 
 .title{
   font-size: 60px;
   color: white;
-  padding: 20rem;
   text-transform: capitalize;
 }
 
@@ -19,6 +14,13 @@ header {
   display: flex;
 }
 
-.container{
+.container .card{
   margin-top: 2rem;
+}
+
+.cyan{
+  background-color: #24838f;
+}
+.footer-copyright{
+  background-color: #1B6972;
 }

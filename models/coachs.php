@@ -1,12 +1,11 @@
 <?php
 require_once('utils/db.php');
 
-function listPlayers ()
+function listCoachs()
 {
   $db = dbConnect();
 
-  $stmt = $db->prepare('SELECT * FROM players');
-
+  $stmt = $db->prepare('SELECT * FROM `coachs`');
   $stmt->execute();
 
   return $stmt->fetchAll();

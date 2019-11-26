@@ -12,7 +12,9 @@
             <div class="card">
               <img src="<?php echo $value['logo']; ?>" class="card-img-top" alt="teamLogo">
               <div class="card-body">
-                <h5 class="card-title"><?php echo $value['name']; ?></h5>
+                <h5 class="card-title">
+                  <a href="?route=team&id=<?php echo $value['id'] ; ?>"><?php echo $value['name']; ?></a>
+                </h5>
                 <p class="card-text"><?php echo $value['short_name']; ?></p>
                 <a href="<?php echo $value['website']; ?>">Link</a>
               </div>
