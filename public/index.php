@@ -25,7 +25,7 @@
                         <a class="nav-link" href="?route=team">FootBall</a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link" href="?route=team" id="teamList" >
+                      <a class="nav-link" href="?route=teams" id="teamList" >
                         Teams
                       </a>
                     </li>

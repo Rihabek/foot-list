@@ -3,13 +3,13 @@ require('models/team.php');
 
 function showTeams() {
   $teams = listTeam();
-  require('views/team.php');
+  require('views/teams.php');
 }
 
 function showTeam(int $id)
 {
   $team = getTeam($id, $_GET['id']);
-  require('views/coachsHteam.php');
+  require('views/team.php');
 }
 
 ?>

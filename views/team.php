@@ -1,31 +1,42 @@
 <?php ob_start(); ?>
 
-
-<header>
-  <h1 class="title text-center">Liste des TEAMS</h1>
+<header >
+  <h1 class="title text-center"><?php echo $team['name']; ?></h1>
 </header>
-<div class="container">
+
+<div style="margin-bottom:25rem;"class="container mt-5 bg-dark">
   <div class="row">
-    <?php foreach ($teams as $key => $value) { ?>
-      <div class="col-md-4">
-        <div class="card-deck text-center">
-            <div class="card">
-              <img src="<?php echo $value['logo']; ?>" class="card-img-top" alt="teamLogo">
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="?route=team&id=<?php echo $value['id'] ; ?>"><?php echo $value['name']; ?></a>
-                </h5>
-                <p class="card-text"><?php echo $value['short_name']; ?></p>
-                <a href="<?php echo $value['website']; ?>">Link</a>
-              </div>
-            </div>
-        </div>
-      </div>
-    <?php } ?>
+    <div class="col-md-4">
+      <img style="width:100%;"src="<?php echo $team['logo']; ?>"  alt="teamLogo">
+
+    </div>
+    <div class="col-md-8">
+      <table class="table table-hover table-dark mt-5 ">
+        <tbody>
+          <tr>
+            <th scope="row">Team Name:</th>
+            <td><?php echo $team['name']; ?></td>
+          </tr>
+          <tr>
+            <th scope="row">Adress:</th>
+            <td colspan="2"><?php echo $team['adress']; ?></td>
+          </tr>
+          <tr>
+            <th scope="row">President:</th>
+            <td><?php echo $team['president']; ?></td>
+          </tr>
+          <tr>
+            <th scope="row">fndation:</th>
+            <td colspan="2"><?php echo $team['fundation_date']; ?></td>
+          </tr>
+          <tr>
+            <th scope="row">website:</th>
+            <td colspan="2"><a href="<?php echo $team['website']; ?>">Website</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
-
-
-
 <?php $content = ob_get_clean(); ?>
 <?php require('public/index.php'); ?>

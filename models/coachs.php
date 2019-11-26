@@ -12,4 +12,18 @@ function listCoachs()
 
 }
 
+function listcoach(int $id)
+{
+
+  $db = dbconnect();
+
+  $stmt = $db->prepare('SELECT * FROM coachs WHERE id = :id');
+
+  $stmt->bindValue(':id', $id);
+
+  $stmt->execute();
+
+  return $stmt->fetch();
+
+}
  ?>

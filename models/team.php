@@ -13,7 +13,7 @@ function listTeam ()
 
 }
 
-function getTeam(int $id)
+function getCoach(int $id)
 {
   $db = dbConnect();
 
@@ -27,6 +27,21 @@ function getTeam(int $id)
     WHERE teams.id = :id');
 
   $stmt->bindValue(':id', $id);
+
+  $stmt->execute();
+
+  return $stmt->fetch();
+
+}
+
+function getTeam (int $id)
+{
+  $db = dbConnect();
+
+  $stmt = $db->prepare('SELECT * FROM teams WHERE id = :id');
+
+  $stmt->bindValue(':id', $id);
+
 
   $stmt->execute();
 
