@@ -26,7 +26,7 @@
             <td><?php echo $team['president']; ?></td>
           </tr>
           <tr>
-            <th scope="row">fndation:</th>
+            <th scope="row">fondation:</th>
             <td colspan="2"><?php echo $team['fundation_date']; ?></td>
           </tr>
           <tr>
